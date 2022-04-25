@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 const { nanoid } = require('nanoid');
 
 class NotesService {
