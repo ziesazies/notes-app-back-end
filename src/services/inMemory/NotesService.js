@@ -25,7 +25,7 @@ class NotesService {
     return id;
   }
 
-  getNote() {
+  getNotes() {
     return this._notes;
   }
 
@@ -58,7 +58,7 @@ class NotesService {
   deleteNoteById(id) {
     const index = this._notes.findIndex((note) => note.id === id);
 
-    if (index !== -1) {
+    if (index === -1) {
       throw new Error('Catatan gagal dihapus. Id tidak ditemukan');
     }
 
